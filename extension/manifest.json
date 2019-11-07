@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Hello World!",
+  "description": "测试用的",
+  "version": "0.1",
+  "permissions": ["browsingData", "downloads", "webRequest", "http://*/*", "https://*/*", "tabs"],
+  "browser_action": {
+    "default_icon": "img/icon_pocket_monster_1011.png",
+    "default_title": "default_title = DDDD",
+    "default_popup": "./view/pop.html"
+  },
+  "background": {
+    "scripts": ["./out/MESSAGE.js", "./out/background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.baidu.com/"],
+      "js": ["lib/jquery.js", "out/MESSAGE.js", "out/content-script-demo.js"],
+      "css": [],
+      "run_at": "document_idle"
+    }
+  ]
+}

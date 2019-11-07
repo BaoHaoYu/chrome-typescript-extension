@@ -1,0 +1,41 @@
+{
+  "name": "chrome-typescript-extension",
+  "version": "0.0.1",
+  "author": "BaoHaoYu",
+  "homepage": "http://bhyddd.top",
+  "description": "使用typescript开发chrome插件",
+  "scripts": {
+    "build": "gulp"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.91",
+    "@types/gulp": "^4.0.6",
+    "@types/gulp-rename": "^0.0.33",
+    "@types/gulp-sourcemaps": "^0.0.32",
+    "@types/gulp-typescript": "^2.13.0",
+    "@types/jquery": "^3.3.31",
+    "execa": "^3.2.0",
+    "gulp": "^4.0.2",
+    "gulp-rename": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-typescript": "^5.0.1",
+    "prettier": "^1.18.2",
+    "ts-node": "^8.4.1",
+    "tslint": "^5.20.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-config-standard": "^8.0.1",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typescript": "^3.6.4"
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "bracketSpacing": true,
+    "jsxBracketSameLine": false,
+    "printWidth": 100,
+    "semi": false,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "es5",
+    "useTabs": false
+  }
+}

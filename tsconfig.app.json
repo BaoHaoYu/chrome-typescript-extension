@@ -1,0 +1,8 @@
+{
+  "extends": "./tsconfig.commom.json",
+  "compilerOptions": {
+    "module": "esnext",
+    "rootDir": "./src",
+    "outDir": "./extension/out"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "tslint:recommended",
+    "tslint-config-standard",
+    "tslint-config-prettier"
+  ],
+  "rules": {
+    "no-console": false,
+    "no-floating-promises": false,
+    "object-literal-sort-keys": false,
+    "prettier": true,
+    "no-reference": false
+  },
+  "rulesDirectory": ["tslint-plugin-prettier"],
+  "linterOptions": {
+    "exclude": [
+      "node_modules",
+      "__build__"
+    ]
+  }
+}
