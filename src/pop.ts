@@ -20,7 +20,9 @@ function query(queryInfo: chrome.tabs.QueryInfo): Promise<chrome.tabs.Tab[]> {
 
 function sendMessage(tabId: number, message: any): Promise<any> {
   return new Promise((resolve) => {
-    chrome.tabs.sendMessage(tabId, message, (response) => resolve(response))
+    chrome.tabs.sendMessage(tabId, message, (response) => {
+      resolve(response)
+    })
   })
 }
 
