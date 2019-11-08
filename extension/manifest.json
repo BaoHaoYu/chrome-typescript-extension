@@ -3,7 +3,15 @@
   "name": "Hello World!",
   "description": "测试用的",
   "version": "0.1",
-  "permissions": ["browsingData", "downloads", "webRequest", "http://*/*", "https://*/*", "tabs"],
+  "permissions": [
+    "browsingData",
+    "downloads",
+    "webRequest",
+    "http://*/*",
+    "https://*/*",
+    "tabs",
+    "webRequestBlocking"
+  ],
   "browser_action": {
     "default_icon": "img/icon_pocket_monster_1011.png",
     "default_title": "default_title = DDDD",
