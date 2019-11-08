@@ -19,5 +19,6 @@
       "css": [],
       "run_at": "document_idle"
     }
-  ]
+  ],
+  "web_accessible_resources": ["out/redirectUrlJs.js", "img/*.png"]
 }
