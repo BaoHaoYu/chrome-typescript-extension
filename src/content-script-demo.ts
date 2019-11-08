@@ -10,9 +10,7 @@ const $btn = $('<button>')
   .on('click', () => {
     chrome.runtime.sendMessage(msgObj.DEMO1)
   })
-$('#s_fm')
-  .empty()
-  .append($btn)
+$('#s_fm').append($btn)
 
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   if (request === msgObj.DEMO2) {
