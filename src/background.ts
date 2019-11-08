@@ -7,3 +7,17 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     chrome.tabs.create({ index: 0 })
   }
 })
+
+// 重定向
+chrome.webRequest.onBeforeRequest.addListener(
+  (details) => {
+    console.log(details)
+    return {
+      redirectUrl: chrome.extension.getURL('img/icon_pocket_monster_1011.png'),
+    }
+  },
+  {
+    urls: ['https://www.baidu.com/img/bd_logo1.png?where=super'],
+  },
+  ['blocking']
+)
