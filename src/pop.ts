@@ -47,14 +47,12 @@ $('.send-msg').on('click', async function() {
 
 // 创建空白标签
 $('.create-empty-tag').on('click', () => {
-  chrome.tabs.create({})
+  chrome.tabs.create({ index: 0 })
 })
 
 // 在末尾创建空白标签
 $('.create-empty-tag-last').on('click', async () => {
-  chrome.tabs.query({}, (tabs) => {
-    chrome.tabs.create({ index: tabs.length })
-  })
+  chrome.tabs.create({})
 })
 
 // url非空白标签
