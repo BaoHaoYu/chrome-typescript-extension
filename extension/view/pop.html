@@ -4,29 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      ul button {
+        margin-bottom: 5px;
+      }
+    </style>
   </head>
   <body style="width: 500px;">
-    <div>
-      <button class="send-msg">
-        发送信息
-      </button>
+    <ul>
+      <li>
+        <h3>信息</h3>
 
-      <button class="create-empty-tag">
-        开头创建空白标签
-      </button>
+        <button class="send-msg">
+          发送信息
+        </button>
+      </li>
+      <li>
+        <h3>标签</h3>
 
-      <button class="create-empty-tag-last">
-        末尾创建空白标签
-      </button>
+        <button class="create-empty-tag">
+          开头创建空白标签
+        </button>
 
-      <button class="create-tag-from-url">
-        创建url标签
-      </button>
+        <button class="create-empty-tag-last">
+          末尾创建空白标签
+        </button>
 
-      <button class="create-tag-from-url">
-        async await 创建url标签
-      </button>
-    </div>
+        <button class="create-tag-from-url">
+          创建url标签
+        </button>
+
+        <button class="create-tag-from-url">
+          async await 创建url标签
+        </button>
+      </li>
+    </ul>
 
     <script src="../lib/jquery.js"></script>
     <script src="../out/MESSAGE.js"></script>
