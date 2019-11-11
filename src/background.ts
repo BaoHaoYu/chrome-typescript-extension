@@ -17,7 +17,7 @@ chrome.webRequest.onBeforeRequest.addListener(
     }
   },
   {
-    urls: ['https://www.baidu.com/img/bd_logo1.png?where=super'],
+    urls: ['https://www.baidu.com/img/bd_logo1.png'],
   },
   ['blocking']
 )
