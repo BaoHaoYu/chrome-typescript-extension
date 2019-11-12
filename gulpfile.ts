@@ -31,6 +31,8 @@ gulp.task('default', () => {
 const w = gulp.watch(files)
 
 w.on('change', (file) => {
+  console.log('changed: ' + file)
+
   tsc.files = [file]
-  gulp.series('default')(() => '')
+  tsc.run()
 })
