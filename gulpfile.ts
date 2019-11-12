@@ -15,7 +15,7 @@ class Tsc {
       .src(this.files, { base: './src' })
       .pipe(sourcemaps.init())
       .pipe(tsProject())
-      .pipe(sourcemaps.write('.'))
+      .pipe(sourcemaps.write())
       .pipe(gulp.dest(tsconfig.compilerOptions.outDir))
   }
 }
