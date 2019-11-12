@@ -20,7 +20,7 @@ class Tsc {
   }
 }
 
-const files = ['src/*.ts', 'src/*.tsx']
+const files = ['src/*.ts', 'src/**/*.ts']
 
 const tsc = new Tsc(files)
 
