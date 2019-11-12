@@ -16,7 +16,7 @@ class Tsc {
       .pipe(sourcemaps.init())
       .pipe(tsProject())
       .pipe(rename({ dirname: '' }))
-      .pipe(sourcemaps.write())
+      .pipe(sourcemaps.write('.'))
       .pipe(gulp.dest(tsconfig.compilerOptions.outDir))
   }
 }
